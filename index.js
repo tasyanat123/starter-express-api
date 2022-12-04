@@ -5,7 +5,7 @@ const content = 'Some content!';
 
 app.all('/', (req, res) => {
     console.log("Just got a request new!")
-    fs.writeFile('/test.txt', content, err => {
+    fs.writeFile('test.txt', content, err => {
         if (err) {
           console.error(err);
         }
